@@ -1,0 +1,16 @@
+/* Styles d'appoint non couverts par les classes utilitaires Tailwind (CDN) */
+
+.photo-placeholder {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #f7f1e6,
+        #f7f1e6 12px,
+        #efe3cf 12px,
+        #efe3cf 24px
+    );
+}
+
+::selection {
+    background-color: #B3272D;
+    color: #ffffff;
+}
