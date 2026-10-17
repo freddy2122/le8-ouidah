@@ -3,7 +3,7 @@
 <footer class="bg-encre text-sable">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid gap-10 md:grid-cols-4">
         <div>
-            <p class="font-display text-2xl font-semibold text-white">Le 8</p>
+            <p class="font-marker text-2xl text-white">Le 8</p>
             <p class="mt-3 text-sm text-sable/80 leading-relaxed">
                 {{ __("Le 8 est un hébergement indépendant en tentes à Ouidah, Bénin. Nous ne sommes affiliés à aucune organisation, institution ou événement officiel — notamment pas à l'organisation des Vodun Days — et accueillons les voyageurs qui se rendent dans la région à l'occasion de ces festivités comme à toute autre période de l'année.") }}
             </p>

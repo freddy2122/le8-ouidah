@@ -34,7 +34,7 @@
 <header class="bg-white border-b border-encre/10 sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between h-16 sm:h-20">
-            <a href="{{ route('home', ['locale' => $currentLocale]) }}" class="font-display text-2xl sm:text-3xl font-semibold text-rouge">
+            <a href="{{ route('home', ['locale' => $currentLocale]) }}" class="font-marker text-2xl sm:text-3xl text-rouge">
                 Le 8
             </a>
 

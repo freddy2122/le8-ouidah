@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     {{-- Poppins (texte courant) + Fraunces en police d'appoint gratuite en attendant
          l'achat de la licence web de Gliker (police commerciale, non disponible sur
-         Google Fonts — voir config/le8.php et la note transmise à l'équipe). --}}
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+         Google Fonts — voir config/le8.php et la note transmise à l'équipe).
+         Permanent Marker : accent "feutre" ponctuel (logo, quelques touches), dans le
+         même esprit que le lettrage à la main utilisé par d'autres acteurs culturels
+         de la région — volontairement pas une imitation d'un logo existant. --}}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Permanent+Marker&display=swap" rel="stylesheet">
 
     {{-- Tailwind CSS via CDN : aucun node_modules, aucune étape de build --}}
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,6 +34,7 @@
                     fontFamily: {
                         display: ['"Fraunces"', 'Georgia', 'serif'],
                         body: ['Poppins', 'system-ui', 'sans-serif'],
+                        marker: ['"Permanent Marker"', 'cursive'],
                     },
                 },
             },
