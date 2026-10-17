@@ -6,17 +6,17 @@
 
     {{-- HERO --}}
     <section class="relative">
-        <div class="photo-placeholder h-[60vh] min-h-[420px] flex items-end relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-encre/90 via-encre/40 to-encre/10"></div>
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pb-12 w-full">
+        <div class="photo-placeholder h-[88vh] min-h-[620px] flex items-end relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-encre/95 via-encre/50 to-encre/10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pb-16 w-full">
                 <p class="inline-block bg-white/90 text-encre text-xs sm:text-sm font-medium px-3 py-1 rounded-full mb-4">
-                    {{ __('Ouidah, Bénin') }}
+                    {{ __('Ouidah, Bénin — berceau du vodun') }}
                 </p>
-                <h1 class="font-display text-4xl sm:text-6xl font-semibold text-white drop-shadow-sm max-w-2xl">
-                    {{ __('Dormir sous tente, à deux pas des Vodun Days') }}
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-semibold text-white drop-shadow-sm max-w-3xl">
+                    {{ __('Dormir sous tente, au cœur de la culture et du tourisme béninois') }}
                 </h1>
-                <p class="mt-4 text-white/90 max-w-xl text-base sm:text-lg">
-                    {{ __('Un hébergement indépendant, pensé pour les voyageurs venus du Bénin, de la diaspora et du monde entier. Tarifs clairs, équipements détaillés, aucune surprise au paiement.') }}
+                <p class="mt-5 text-white/90 max-w-2xl text-base sm:text-xl">
+                    {{ __("Temples vodun, art, mémoire de la Route des Esclaves, plages de l'Atlantique : Ouidah est l'un des hauts lieux culturels et touristiques du Bénin. Le 8 vous y accueille à deux pas des Vodun Days, avec des tarifs clairs et aucune surprise au paiement.") }}
                 </p>
                 <div class="mt-8 flex flex-wrap gap-4">
                     <a href="{{ route('tentes.index', ['locale' => app()->getLocale()]) }}" class="rounded-full bg-rouge px-6 py-3 text-sm font-semibold text-white hover:bg-rouge-dark transition">
