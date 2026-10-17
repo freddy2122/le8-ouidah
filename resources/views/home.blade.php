@@ -6,8 +6,9 @@
 
     {{-- HERO --}}
     <section class="relative">
-        <div class="photo-placeholder h-[60vh] min-h-[420px] flex items-end">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-12 w-full">
+        <div class="photo-placeholder h-[60vh] min-h-[420px] flex items-end relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-encre/90 via-encre/40 to-encre/10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pb-12 w-full">
                 <p class="inline-block bg-white/90 text-encre text-xs sm:text-sm font-medium px-3 py-1 rounded-full mb-4">
                     {{ __('Ouidah, Bénin') }}
                 </p>
