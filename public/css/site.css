@@ -14,3 +14,20 @@
     background-color: #B3272D;
     color: #ffffff;
 }
+
+/* Effet "Ken Burns" : léger zoom continu sur l'image de fond du hero */
+.hero-kenburns {
+    animation: hero-kenburns 22s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes hero-kenburns {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-kenburns {
+        animation: none;
+    }
+}

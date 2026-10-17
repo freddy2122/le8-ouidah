@@ -6,7 +6,10 @@
 
     {{-- HERO --}}
     <section class="relative">
-        <div class="photo-placeholder h-[88vh] min-h-[620px] flex items-end relative overflow-hidden">
+        <div class="h-[88vh] min-h-[620px] flex items-end relative overflow-hidden">
+            <img src="{{ asset('images/hero-porte-du-non-retour.jpg') }}"
+                 alt="{{ __('La Porte du Non-Retour, mémorial de la Route des Esclaves à Ouidah') }}"
+                 class="absolute inset-0 w-full h-full object-cover hero-kenburns">
             <div class="absolute inset-0 bg-gradient-to-t from-encre/95 via-encre/50 to-encre/10"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pb-16 w-full">
                 <p class="inline-block bg-white/90 text-encre text-xs sm:text-sm font-medium px-3 py-1 rounded-full mb-4">
