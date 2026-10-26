@@ -26,6 +26,7 @@
             <p class="font-semibold text-white mb-3">{{ __('Le camp') }}</p>
             <ul class="space-y-2 text-sm text-sable/80">
                 <li><a href="{{ route('tentes.index', ['locale' => app()->getLocale()]) }}" class="hover:text-white transition">{{ __('Les tentes') }}</a></li>
+                <li><a href="{{ route('pages.dining', ['locale' => app()->getLocale()]) }}" class="hover:text-white transition">{{ __('Restauration') }}</a></li>
                 <li><a href="{{ route('pages.prepare-stay', ['locale' => app()->getLocale()]) }}" class="hover:text-white transition">{{ __('Préparer mon séjour') }}</a></li>
                 <li><a href="{{ route('reservation.create', ['locale' => app()->getLocale()]) }}" class="hover:text-white transition">{{ __('Réserver') }}</a></li>
                 <li><a href="{{ route('pages.about', ['locale' => app()->getLocale()]) }}" class="hover:text-white transition">{{ __('À propos') }}</a></li>

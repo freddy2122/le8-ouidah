@@ -100,9 +100,14 @@
                         <span>{{ __('Expériences culinaires locales sur demande (dîners typiques, découverte de la cuisine béninoise).') }}</span>
                     </li>
                 </ul>
-                <a href="{{ config('le8.company.whatsapp_link') }}" target="_blank" rel="noopener" class="inline-flex items-center rounded-full bg-rouge px-6 py-3 text-sm font-semibold text-white hover:bg-rouge-dark transition">
-                    {{ __('Demander le détail et les tarifs') }}
-                </a>
+                <div class="flex flex-wrap gap-4">
+                    <a href="{{ route('pages.dining', ['locale' => app()->getLocale()]) }}" class="inline-flex items-center rounded-full bg-rouge px-6 py-3 text-sm font-semibold text-white hover:bg-rouge-dark transition">
+                        {{ __('Voir la carte et les tarifs') }}
+                    </a>
+                    <a href="{{ config('le8.company.whatsapp_link') }}" target="_blank" rel="noopener" class="inline-flex items-center rounded-full border border-encre/20 px-6 py-3 text-sm font-semibold hover:border-encre/40 transition">
+                        {{ __('Réserver sur WhatsApp') }}
+                    </a>
+                </div>
             </div>
         </div>
     </section>

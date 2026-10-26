@@ -22,6 +22,7 @@ Route::prefix('{locale}')
         Route::get('/reservation-confirmee/{reference}', [BookingController::class, 'confirmation'])->name('reservation.confirmation');
 
         Route::get('/a-propos', [PageController::class, 'about'])->name('pages.about');
+        Route::get('/restauration', [PageController::class, 'dining'])->name('pages.dining');
         Route::get('/preparer-mon-sejour', [PageController::class, 'prepareStay'])->name('pages.prepare-stay');
         Route::get('/politique-de-confidentialite', [PageController::class, 'privacy'])->name('pages.privacy');
         Route::get('/politique-de-cookies', [PageController::class, 'cookies'])->name('pages.cookies');

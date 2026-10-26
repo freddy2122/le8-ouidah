@@ -122,4 +122,30 @@ return [
             'photos' => [],
         ],
     ],
+
+    // Restauration et expériences culinaires — données d'exemple à valider /
+    // remplacer par la vraie carte et les vrais tarifs avant lancement.
+    'dining' => [
+        'restaurant' => [
+            'description' => "Espace de restauration ouvert sur le camp, facturé séparément de la nuitée. Ouvert midi et soir.",
+            'menu' => [
+                ['name' => 'Poulet braisé, attiéké et sauce pimentée', 'price_xof' => 4000],
+                ['name' => 'Poisson grillé, riz et sauce arachide', 'price_xof' => 4500],
+                ['name' => 'Igname pilée, sauce légumes (végétarien)', 'price_xof' => 3000],
+                ['name' => 'Petit-déjeuner continental', 'price_xof' => 2500],
+            ],
+        ],
+        'experiences' => [
+            [
+                'name' => 'Dîner traditionnel béninois',
+                'description' => 'Un repas typique partagé sous les étoiles, préparé selon les recettes locales.',
+                'price_xof_per_person' => 8000,
+            ],
+            [
+                'name' => 'Atelier cuisine béninoise',
+                'description' => 'Apprenez à préparer un plat emblématique avec notre équipe, puis dégustez-le ensemble.',
+                'price_xof_per_person' => 10000,
+            ],
+        ],
+    ],
 ];

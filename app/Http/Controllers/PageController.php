@@ -14,6 +14,13 @@ class PageController extends Controller
         return view('pages.preparer-mon-sejour');
     }
 
+    public function dining()
+    {
+        return view('pages.restauration', [
+            'dining' => config('le8.dining'),
+        ]);
+    }
+
     public function privacy()
     {
         return view('pages.politique-confidentialite');

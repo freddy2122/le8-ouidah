@@ -41,6 +41,7 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="{{ route('home', ['locale' => $currentLocale]) }}" class="hover:text-rouge transition">{{ __('Accueil') }}</a>
                 <a href="{{ route('tentes.index', ['locale' => $currentLocale]) }}" class="hover:text-rouge transition">{{ __('Les tentes') }}</a>
+                <a href="{{ route('pages.dining', ['locale' => $currentLocale]) }}" class="hover:text-rouge transition">{{ __('Restauration') }}</a>
                 <a href="{{ route('pages.prepare-stay', ['locale' => $currentLocale]) }}" class="hover:text-rouge transition">{{ __('Préparer mon séjour') }}</a>
                 <a href="{{ route('pages.about', ['locale' => $currentLocale]) }}" class="hover:text-rouge transition">{{ __('À propos') }}</a>
             </nav>
@@ -61,6 +62,7 @@
     <nav id="nav-mobile" class="hidden md:hidden border-t border-encre/10 bg-white px-4 py-4 space-y-3 text-sm font-medium">
         <a href="{{ route('home', ['locale' => $currentLocale]) }}" class="block hover:text-rouge transition">{{ __('Accueil') }}</a>
         <a href="{{ route('tentes.index', ['locale' => $currentLocale]) }}" class="block hover:text-rouge transition">{{ __('Les tentes') }}</a>
+        <a href="{{ route('pages.dining', ['locale' => $currentLocale]) }}" class="block hover:text-rouge transition">{{ __('Restauration') }}</a>
         <a href="{{ route('pages.prepare-stay', ['locale' => $currentLocale]) }}" class="block hover:text-rouge transition">{{ __('Préparer mon séjour') }}</a>
         <a href="{{ route('pages.about', ['locale' => $currentLocale]) }}" class="block hover:text-rouge transition">{{ __('À propos') }}</a>
         <a href="{{ route('reservation.create', ['locale' => $currentLocale]) }}" class="block rounded-full bg-rouge px-5 py-2.5 text-center text-white font-semibold">
