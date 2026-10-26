@@ -7,9 +7,10 @@
     <h1 class="font-display text-4xl font-semibold mb-8">{{ __('À propos de Le 8') }}</h1>
 
     <div class="prose prose-lg max-w-none text-encre/80 leading-relaxed space-y-5">
-        <p>{{ __('Bienvenue dans un univers où hospitalité et évasion se rencontrent.') }}</p>
-        <p>{{ __('L\'accueil, le sens du détail et l\'art de recevoir : nous vous invitons à vivre une expérience simple et sincère, où chaque séjour devient un moment mémorable.') }}</p>
-        <p>{{ __('Spécialisés dans l\'hébergement à Ouidah, nous mettons notre connaissance du terrain, notre créativité et notre engagement au service de votre confort. Que vous veniez pour les Vodun Days ou pour découvrir la région à tout autre moment de l\'année, nous vous accompagnons avec professionnalisme et attention.') }}</p>
+        <p>{{ __('Bienvenue dans un univers où gastronomie et évasion se rencontrent.') }}</p>
+        <p>{{ __('L\'excellence culinaire, l\'art de l\'accueil et le sens du détail : nous vous invitons à vivre une expérience simple et sincère, où chaque séjour et chaque repas racontent une histoire.') }}</p>
+        <p>{{ __('Spécialisés dans l\'hébergement et la restauration à Ouidah, nous mettons notre connaissance du terrain, notre créativité et notre engagement au service de votre confort. En plus des tentes, Le 8 propose un espace de restauration sur place ainsi que des expériences culinaires locales — dîners typiques, découverte de la cuisine béninoise — pour que votre séjour soit aussi une découverte des saveurs du Bénin.') }}</p>
+        <p>{{ __('Que vous veniez pour les Vodun Days ou pour découvrir la région à tout autre moment de l\'année, nous vous accompagnons avec professionnalisme et attention.') }}</p>
         <p>{{ __('Notre ambition est simple : que votre séjour soit authentique, confortable et sans mauvaise surprise — du premier contact jusqu\'à votre départ.') }}</p>
     </div>
 

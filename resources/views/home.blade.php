@@ -81,6 +81,32 @@
         </div>
     </section>
 
+    {{-- RESTAURATION --}}
+    <section class="bg-sable">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="photo-placeholder h-64 lg:h-80 rounded-2xl"></div>
+            <div>
+                <h2 class="font-display text-3xl font-semibold mb-4">{{ __('Restauration & expériences culinaires') }}</h2>
+                <p class="text-encre/80 leading-relaxed mb-6">
+                    {{ __('Au-delà de l\'hébergement, Le 8 propose un espace de restauration sur place ainsi que des expériences culinaires locales — dîners typiques et découverte de la cuisine béninoise — pour prolonger le voyage dans l\'assiette.') }}
+                </p>
+                <ul class="space-y-3 text-sm text-encre/80 mb-6">
+                    <li class="flex gap-3">
+                        <span class="text-rouge font-semibold">—</span>
+                        <span>{{ __('Restaurant / espace repas sur place, facturé séparément de la nuitée.') }}</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-rouge font-semibold">—</span>
+                        <span>{{ __('Expériences culinaires locales sur demande (dîners typiques, découverte de la cuisine béninoise).') }}</span>
+                    </li>
+                </ul>
+                <a href="{{ config('le8.company.whatsapp_link') }}" target="_blank" rel="noopener" class="inline-flex items-center rounded-full bg-rouge px-6 py-3 text-sm font-semibold text-white hover:bg-rouge-dark transition">
+                    {{ __('Demander le détail et les tarifs') }}
+                </a>
+            </div>
+        </div>
+    </section>
+
     {{-- TRANSPARENCE --}}
     <section class="bg-encre text-sable">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-3 gap-10">
