@@ -21,7 +21,13 @@
 @endphp
 
 @section('content')
-    <section class="photo-placeholder h-[40vh] min-h-[320px]"></section>
+    @if (!empty($tent['photo']))
+        <section class="h-[40vh] min-h-[320px]">
+            <img src="{{ asset($tent['photo']) }}" alt="{{ $tent['name'] }}" class="w-full h-full object-cover">
+        </section>
+    @else
+        <section class="photo-placeholder h-[40vh] min-h-[320px]"></section>
+    @endif
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid lg:grid-cols-3 gap-12">
         <div class="lg:col-span-2">

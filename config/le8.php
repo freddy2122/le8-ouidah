@@ -75,6 +75,7 @@ return [
             'parking' => 'Parking surveillé inclus',
             'security' => 'Gardiennage de nuit, camp clôturé',
             'price_per_night_xof' => 25000,
+            'photo' => 'images/tentes/tentes-guirlande.jpg',
             'photos' => [],
         ],
         [
@@ -97,6 +98,7 @@ return [
             'parking' => 'Parking surveillé inclus',
             'security' => 'Gardiennage de nuit, camp clôturé',
             'price_per_night_xof' => 30000,
+            'photo' => 'images/tentes/tentes-familiales.jpg',
             'photos' => [],
         ],
         [
@@ -119,9 +121,14 @@ return [
             'parking' => 'Parking surveillé inclus',
             'security' => 'Gardiennage de nuit, camp clôturé',
             'price_per_night_xof' => 35000,
+            'photo' => 'images/tentes/interieur-tente.jpg',
             'photos' => [],
         ],
     ],
+
+    // Masque la restauration (nav, section accueil, page /restauration) tant
+    // que la carte réelle n'est pas prête. Remettre à true pour la republier.
+    'dining_enabled' => false,
 
     // Restauration et expériences culinaires — données d'exemple à valider /
     // remplacer par la vraie carte et les vrais tarifs avant lancement.

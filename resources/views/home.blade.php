@@ -67,7 +67,11 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($tents as $tent)
                 <a href="{{ route('tentes.show', ['locale' => app()->getLocale(), 'tent' => $tent['slug']]) }}" class="group block rounded-2xl overflow-hidden border border-encre/10 hover:shadow-lg transition">
-                    <div class="photo-placeholder h-48"></div>
+                    @if (!empty($tent['photo']))
+                        <img src="{{ asset($tent['photo']) }}" alt="{{ $tent['name'] }}" class="h-48 w-full object-cover">
+                    @else
+                        <div class="photo-placeholder h-48"></div>
+                    @endif
                     <div class="p-6">
                         <h3 class="font-display text-xl font-semibold group-hover:text-rouge transition">{{ $tent['name'] }}</h3>
                         <p class="text-sm text-encre/70 mt-1">{{ $tent['tagline'] }}</p>
@@ -82,6 +86,7 @@
     </section>
 
     {{-- RESTAURATION --}}
+    @if (config('le8.dining_enabled'))
     <section class="bg-sable">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
             <div class="photo-placeholder h-64 lg:h-80 rounded-2xl"></div>
@@ -111,6 +116,7 @@
             </div>
         </div>
     </section>
+    @endif
 
     {{-- TRANSPARENCE --}}
     <section class="bg-encre text-sable">

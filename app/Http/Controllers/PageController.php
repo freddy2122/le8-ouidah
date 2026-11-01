@@ -16,6 +16,8 @@ class PageController extends Controller
 
     public function dining()
     {
+        abort_unless(config('le8.dining_enabled'), 404);
+
         return view('pages.restauration', [
             'dining' => config('le8.dining'),
         ]);
